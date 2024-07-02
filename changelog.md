@@ -1,4 +1,6 @@
 # Gamemode Swapper Changelog
+## v1.2.0
+- Added 2.2 Support
 ## v1.0.5
 - Fixed download
 ## v1.0.4
