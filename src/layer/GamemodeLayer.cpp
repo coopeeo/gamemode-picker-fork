@@ -220,7 +220,7 @@ void GamemodeLayer::updateButtons(PlayerObject* player1) {
     if(!playerExt1->isSpeed(GJPlayerSpeed::Double)) m_doubleBtn->toggle(playerExt1->isSpeed(GJPlayerSpeed::Double));
     if(!playerExt1->isSpeed(GJPlayerSpeed::Three)) m_threeBtn->toggle(playerExt1->isSpeed(GJPlayerSpeed::Three));
     if(!playerExt1->isSpeed(GJPlayerSpeed::Four)) m_fourBtn->toggle(playerExt1->isSpeed(GJPlayerSpeed::Four));
-    if(!playerExt1->m_flipped) m_flipBtn->toggle(playerExt1->m_fields->m_flipped);
+    if(!playerExt1->m_fields->m_flipped) m_flipBtn->toggle(playerExt1->m_fields->m_flipped);
 }
 
 void GamemodeLayer::beginButtons(PlayerObject* player1) {
