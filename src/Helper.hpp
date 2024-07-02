@@ -26,7 +26,9 @@ namespace Helper {
         }
         auto obj = TeleportPortalObject::create("edit_eGameRotBtn_001.png", true);
         obj->m_cameraIsFreeMode = true;
+        #ifndef GEODE_IS_WINDOWS 
         playLayer->updateCameraMode(obj, false);
+        #endif
     }
 
     void changeToggle(int toggle) {
