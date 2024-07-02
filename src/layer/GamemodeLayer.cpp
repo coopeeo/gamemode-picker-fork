@@ -197,7 +197,9 @@ void GamemodeLayer::onMode(CCObject* sender) {
     // log::info("player speed: {}", player1->m_playerSpeed);
     auto obj = TeleportPortalObject::create("edit_eGameRotBtn_001.png", true);
     obj->m_cameraIsFreeMode = true;
+    #ifndef GEODE_IS_WINDOWS 
     playLayer->updateCameraMode(obj, false);
+    #endif
     updateButtons(player1);
     updateToggleButtons();
 }
